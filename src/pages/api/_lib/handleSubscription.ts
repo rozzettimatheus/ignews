@@ -29,8 +29,6 @@ export async function saveSubscription(
     )
   } else {
     try {
-      console.log('aqui')
-
       await fauna.query(
         // q.Update(..., data: { status: subscriptionData.status })
         q.Replace(
