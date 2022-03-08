@@ -11,7 +11,6 @@ import '../styles/global.scss'
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const ref = useRef(null)
-  const [progress, setProgress] = useState(40)
 
   useEffect(() => {
     router.events.on('routeChangeStart', () => {

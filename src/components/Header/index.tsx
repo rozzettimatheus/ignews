@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { Hamburger } from '../Hamburger'
 import { SignInButton } from '../SignInButton'
-import { ActiveLink } from '../../ActiveLink'
+import { ActiveLink } from '../ActiveLink'
 import styles from './styles.module.scss'
 
 export function Header() {

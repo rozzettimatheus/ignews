@@ -1,3 +1,5 @@
+// stripe login
+// stripe listen --forward-to localhost:3000/api/webhooks
 import { NextApiRequest, NextApiResponse } from 'next'
 import { Readable } from 'stream'
 import Stripe from 'stripe'
@@ -49,6 +51,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const { type } = event
+
+  console.log('type', type)
 
   if (relevantEvents.has(type)) {
     try {
