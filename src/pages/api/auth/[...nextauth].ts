@@ -14,8 +14,6 @@ export default NextAuth({
   ],
   callbacks: {
     async session(session) {
-      // get user by email
-
       try {
         const userActiveSubscription = await fauna.query(
           q.Get(
