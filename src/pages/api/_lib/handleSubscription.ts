@@ -21,7 +21,6 @@ export async function saveSubscription(
   }
 
   if (createAction) {
-    // add is-case if subscription by stripe is allowed
     await fauna.query(
       q.Create(q.Collection('subscriptions'), {
         data: subscriptionData,

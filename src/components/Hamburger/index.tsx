@@ -1,5 +1,4 @@
 import { FaBars } from 'react-icons/fa'
-import { useState, useCallback } from 'react'
 
 import styles from './styles.module.scss'
 

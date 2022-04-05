@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'
-import Link from 'next/link'
 
 import { Hamburger } from '../Hamburger'
 import { SignInButton } from '../SignInButton'
 import { ActiveLink } from '../ActiveLink'
+
 import styles from './styles.module.scss'
 
 export function Header() {

@@ -15,7 +15,7 @@ interface PostPropsProps {
     title: string
     content: string
     updatedAt: string
-    thumbnail: {
+    thumbnail?: {
       src: string
       alt: string
     }
@@ -43,11 +43,11 @@ export default function PostPreview({ post }: PostPropsProps) {
           <h1>{post.title}</h1>
           <time>{post.updatedAt}</time>
 
-          <img
+          {/* <img
             className={styles.thumbnail}
             src={post.thumbnail.src}
             alt={post.thumbnail.alt}
-          />
+          /> */}
 
           <div
             className={`${styles.postContent} ${styles.previewContent}`}
@@ -76,7 +76,7 @@ export default function PostPreview({ post }: PostPropsProps) {
  *  - rotas fixas são geradas automaticamente pelo next de forma estatica
  */
 export const getStaticPaths: GetStaticPaths = async () => {
-  // requisicao com os posts mais pedidos e colocar no path
+  // requisicao com os posts mais acessados e colocar no path
 
   return {
     paths: [
